@@ -1,0 +1,143 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #fe424d;
+    font-size: 3rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.f-info-links {
+    width: 100%;
+}
+
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+.f-info {
+    height: 7rem;
+    text-align: center;
+    background-color: rgb(211, 189, 189);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 8px rgba(5, 5, 5, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* text-decoration: none; */
+}
+
+.listing-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+    font-size: 1rem;
+}
+
+.row-cols-1,
+.row-cols-lg-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1 1 100%;
+    max-width: 25rem;
+}
+
+.listing-list {
+    text-decoration: none !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: antiquewhite;
+}
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 992px) {
+    .col {
+        flex: 1 1 33.3333%;
+        /* Display 3 cards per row for larger screens */
+    }
+}
+
+#map {
+    height: 400px;
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    width: 80vp;
+}
